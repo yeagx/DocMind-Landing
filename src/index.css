@@ -1,0 +1,78 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html,
+  body {
+    font-family: theme('fontFamily.sans');
+    background-color: theme('colors.dm.background');
+    color: theme('colors.dm.foreground');
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  ::selection {
+    background-color: rgba(13, 110, 115, 0.4);
+    color: #fff;
+  }
+
+  :focus-visible {
+    outline: 2px solid rgba(13, 110, 115, 0.7);
+    outline-offset: 2px;
+    border-radius: 8px;
+  }
+
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: rgba(13, 110, 115, 0.45) transparent;
+  }
+
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background-color: rgba(13, 110, 115, 0.45);
+    border-radius: 9999px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(13, 110, 115, 0.7);
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  .text-pretty {
+    text-wrap: pretty;
+  }
+
+  .gradient-text {
+    background: linear-gradient(135deg, #ffffff 0%, #8ae7e2 55%, #14a39a 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .mask-radial-fade {
+    -webkit-mask-image: radial-gradient(ellipse at center, black 40%, transparent 75%);
+    mask-image: radial-gradient(ellipse at center, black 40%, transparent 75%);
+  }
+}
+
+[data-sonner-toaster] [data-sonner-toast] {
+  font-family: theme('fontFamily.sans');
+}
