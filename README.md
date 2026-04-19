@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="src/assets/docmind-logo.png" alt="DocMind" width="240" />
+  <img src="src/assets/docmind-logo.png" alt="DocMind" width="140" />
 </p>
 
 # DocMind Landing

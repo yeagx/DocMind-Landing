@@ -41,7 +41,7 @@ export function Navbar() {
           : 'border-b border-transparent',
       )}
     >
-      <div className="mx-auto flex max-w-7xl items-center justify-between gap-3 px-4 py-3 sm:gap-4 sm:px-6 sm:py-4 lg:px-8">
+      <div className="mx-auto flex h-16 max-w-7xl items-center justify-between gap-3 px-4 sm:gap-4 sm:px-6 lg:px-8">
         <a href="#top" className="flex min-w-0 items-center">
           <Logo size="xl" />
         </a>
