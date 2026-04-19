@@ -7,18 +7,18 @@ import docmindLogo from '../../assets/docmind-logo.png'
 export function Logo({ className, withWordmark = true, size = 'md' }) {
   const markSize =
     size === 'xl'
-      ? 'h-10 w-10 sm:h-11 sm:w-11 md:h-12 md:w-12 lg:h-14 lg:w-14'
+      ? 'h-9 w-9 sm:h-10 sm:w-10 md:h-11 md:w-11'
       : size === 'lg'
-        ? 'h-9 w-9 sm:h-10 sm:w-10 md:h-11 md:w-11'
-        : 'h-8 w-8 sm:h-9 sm:w-9'
+        ? 'h-8 w-8 md:h-9 md:w-9'
+        : 'h-7 w-7 sm:h-8 sm:w-8'
   const wordmarkClass =
     size === 'xl'
-      ? 'text-xl sm:text-2xl md:text-2xl'
+      ? 'text-lg sm:text-xl'
       : size === 'lg'
-        ? 'text-lg sm:text-xl'
-        : 'text-base sm:text-lg'
+        ? 'text-base sm:text-lg'
+        : 'text-sm sm:text-base'
   return (
-    <div className={cn('flex items-center gap-2.5 sm:gap-3', className)}>
+    <div className={cn('flex items-center gap-2 sm:gap-2.5', className)}>
       <img
         src={docmindLogo}
         alt="DocMind"
