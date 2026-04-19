@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="src/assets/docmind-logo.png" alt="DocMind" width="240" />
+</p>
+
 # DocMind Landing
 
 Public marketing site for DocMind. This project is **standalone**: it does not link to or embed the DocMind web application. Use it for product positioning and institutional outreach (e.g. `mailto:` contact).
