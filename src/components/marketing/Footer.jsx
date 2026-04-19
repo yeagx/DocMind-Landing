@@ -6,7 +6,7 @@ export function Footer() {
     <footer className="relative border-t border-dm-border/60 bg-dm-background/60">
       <div className="mx-auto flex max-w-7xl flex-col gap-10 px-4 py-12 sm:px-6 lg:flex-row lg:items-start lg:justify-between lg:px-8">
         <div className="max-w-sm">
-          <Logo size="md" />
+          <Logo size="lg" />
           <p className="mt-4 text-sm leading-relaxed text-dm-muted">
             DocMind turns your institution's documents into a conversation.
             Built for students, curated by instructors, owned by admins.
